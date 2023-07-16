@@ -15,8 +15,8 @@ function updateTime(){
     const date = new Date();
     const secondToDegree = date.getSeconds() / 60 * 360;
     const MinuteToDegree = date.getMinutes() / 60 * 360;
-    const hourToDegree = date.getHours() / 60 * 360;
-    // console.log(secondToDegree) 
+    const hourToDegree = date.getHours() / 12 * 360;
+    console.log(date.getHours() / 12 *360) 
 
     //update the rotation
     handSecond.style.transform = `rotate(${secondToDegree}deg)`
