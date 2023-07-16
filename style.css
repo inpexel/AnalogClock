@@ -13,19 +13,21 @@
 }
 
 body{
+    color: var(--black-color);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--white-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .dark{
-    --primary-color:#1e1e1e;
-    --white-color:rgb(26, 26, 26)000;
-    --black-color:#ffffff;
+    --primary-color:#f6f7fb;
+    --white-color:#151515;
+    --black-color:#f6f6f6;
     --red-color:#e74c3c;
-    --shadow-color:#ffffff25;
+    --shadow-color:#f1f1f125;
 }
 
 .container{
@@ -44,7 +46,7 @@ body{
         height: 400px;
         border-radius: 50%;
         background-color: var(--white-color);
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1),0 25px 45px rgba(0, 0, 0, 0.1) ;
+        box-shadow: 0 15px 25px var(--shadow-color),0 25px 45px rgba(0, 0, 0, 0.1) ;
         position: relative;
 
             > label{
@@ -120,8 +122,8 @@ body{
 }
 
 #changeMode{
-    background-color: black;
-    color: white;
+    background-color: var(--black-color);
+    color: var(--white-color);
     outline: none;
     border: none;
     padding: 20px 40px;
